@@ -12,9 +12,11 @@ function preload(){
 }
 function draw(){
     image(img,0,0,640,420);
-
+    console.log("i am in draw function");
     if(status != ''){
+        console.log("i am inside if");
         for(i=0; i < object.length; i++){
+            console.log("I am inside forloop");
             document.getElementById('status').innerHTML = 'Status: Detecting objects';
             percent = floor(object[i].confidence * 100);
             fill('#980045');
